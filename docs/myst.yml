@@ -1,0 +1,15 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 0595192a-6571-427c-a258-4c0bbb80e2fb
+  title: Marimo Extension Example
+  # description:
+  # keywords: []
+  # authors: []
+  github: https://github.com/curvenote/myst-ext-marimo
+  # To autogenerate a Table of Contents, run "myst init --write-toc"
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"],
+  "compilerOptions": {
+    "lib": ["ES2019", "DOM"],
+    "target": "ES6",
+    "jsx": "react-jsx",
+    "skipLibCheck": true,
+    "composite": false,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": false,
+    "isolatedModules": true,
+    "module": "node16",
+    "moduleResolution": "node16",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
+    "strict": true,
+    "paths": {
+      "~/*": ["./src/*"]
+    },
+    "outDir": "dist"
+  }
+}
