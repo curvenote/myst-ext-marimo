@@ -2,12 +2,15 @@
 version: 1
 project:
   id: 0595192a-6571-427c-a258-4c0bbb80e2fb
-  title: Marimo Extension Example
+  title: marimo extension example
   # description:
   # keywords: []
   # authors: []
   github: https://github.com/curvenote/myst-ext-marimo
   # To autogenerate a Table of Contents, run "myst init --write-toc"
+  plugins:
+    - type: executable
+      path: ../py/executable.py
 site:
   template: book-theme
   # options:

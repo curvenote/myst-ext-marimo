@@ -22,3 +22,22 @@ export const marimoDirective: DirectiveSpec = {
     return [marimo];
   },
 };
+
+export const marimoHeadDirective: DirectiveSpec = {
+  name: 'marimo head',
+  doc: 'Required link/assets for marimo',
+  options: {
+    version: { type: String, doc: 'the version string of marimo renderer' },
+  },
+  body: {
+    type: String,
+  },
+  run(data, vfile, ctx) {
+    const marimo = {
+      type: 'marimo-head',
+      data: { ...data.options },
+      value: data.body as string,
+    };
+    return [marimo];
+  },
+};
