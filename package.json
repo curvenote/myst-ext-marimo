@@ -1,7 +1,7 @@
 {
   "name": "myst-ext-marimo",
   "version": "0.0.0",
-  "description": "Marimo directives and renderers",
+  "description": "marimo directives and renderers",
   "main": "index.js",
   "author": "Rowan Cockett",
   "license": "MIT",

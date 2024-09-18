@@ -1,9 +1,9 @@
 import type { MystPlugin } from 'myst-common';
-import { marimoDirective } from './marimoDirective.js';
+import { marimoHeadDirective, marimoDirective } from './directives.js';
 
 const plugin: MystPlugin = {
-  name: 'Marimo example',
-  directives: [marimoDirective],
+  name: 'marimo plugin',
+  directives: [marimoHeadDirective, marimoDirective],
   roles: [],
   transforms: [],
 };

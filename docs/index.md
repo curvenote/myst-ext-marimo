@@ -1,13 +1,8 @@
 ---
-title: Example
+title: homepage
 ---
 
 ```{marimo}
-:name: marimo-island
-:caption: Marimo Island Example
-:app-id: main
-:version: 0.6.2
-
 import marimo as mo
 import sys
 
@@ -16,6 +11,5 @@ if "pyodide" in sys.modules:
     await micropip.install('cowsay')
 
 import cowsay
-cow_string = cowsay.get_output_string('cow', 'Hello, Marimo!!!')
-cow_string
+cowsay.get_output_string('cow', 'Hello, marimo!!!')
 ```
